@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Moby by leonbarrett</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Moby</h1>
+        <p>A quick tool to create mobile preview sites from a bunch of images</p>
+
+        <p class="view"><a href="https://github.com/leonbarrett/moby">View the Project on GitHub <small>leonbarrett/moby</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/leonbarrett/moby/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/leonbarrett/moby/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/leonbarrett/moby">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>What</h1>
+
+<p>This is a simple tool to create a VERY basic HTML demo for a mobile site using a bunch of images</p>
+
+<h1>How</h1>
+
+<p>To create a demo create a new directory. Lets call it moby. Create a directory called img within moby and add your images. </p>
+
+<p>Next make a routes.json file, such as the example below:</p>
+
+<pre><code>{
+"name": "Mobile Demo",
+"description": "A demo mobile site",
+"routes": [
+    {
+    "name": "news",
+    "order": "home.jpg,news_list.jpeg,news_single.jpeg"
+    },
+    {
+    "name": "directory",
+    "order": "home.jpg,directory.jpeg,large_store.jpeg,store.jpeg"
+    }
+    ]
+}
+</code></pre>
+
+<p>Then change directory so that you are within the moby directory and run:</p>
+
+<p><code>$ moby -m demo:create</code></p>
+
+<h1>Installation</h1>
+
+<p>Ensure you have PHP installed as CLI. Run <code>php -v</code> to check</p>
+
+<p>Download the file and make it executable</p>
+
+<p><code>chmod a+x moby</code></p>
+
+<p>Either place it in your path, or add to your path.</p>
+
+<p><code>echo 'export PATH=YOURPATHHERE:$PATH' &gt;&gt; ~/.profile</code></p>
+
+<p>Type <code>moby --help</code> for help.</p>
+
+<h1>Methods</h1>
+
+<p><code>$moby -m demo:create</code> - create a demo based on the routes.json file</p>
+
+<h1>Thanks</h1>
+
+<p>Thanks to <a href="https://github.com/pete-otaqui/ClipClop">https://github.com/pete-otaqui/ClipClop</a> for the library to parse the command line options</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/leonbarrett">leonbarrett</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-2691011-14");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
