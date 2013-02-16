@@ -10,23 +10,22 @@ To create a demo create a new directory. Lets call it moby. Create a directory c
 
 Next make a routes.json file, such as the example below:
 
-`
+```
 {
-	"name": "Mobile Demo",
-	"description": "A demo mobile site",
-	"routes": [
-				{
-					"name": "news",
-					"order": "home.jpg, news_list.jpeg, news_single.jpeg"
-				},
-				
-				{
-					"name": "directory",
-					"order": "home.jpg, directory.jpeg, large_store.jpeg, store.jpeg"
-				}
-			  ]
+"name": "Mobile Demo",
+"description": "A demo mobile site",
+"routes": [
+	{
+	"name": "news",
+	"order": "home.jpg,news_list.jpeg,news_single.jpeg"
+	},
+	{
+	"name": "directory",
+	"order": "home.jpg,directory.jpeg,large_store.jpeg,store.jpeg"
+	}
+	]
 }
-`
+```
 
 Then change directory so that you are within the moby directory and run:
 
