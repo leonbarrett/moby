@@ -12,8 +12,8 @@ Next make a routes.json file, such as the example below:
 
 `
 {
-	"name": "SiB Mobile Demo",
-	"description": "A demo mobile site for Shopping In Birmingham",
+	"name": "Mobile Demo",
+	"description": "A demo mobile site",
 	"routes": [
 				{
 					"name": "news",
